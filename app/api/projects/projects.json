@@ -1,0 +1,63 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Movie App",
+      "description": "A movie web application building with react js ",
+      "techStack": ["React", "Node.js"],
+      "imageUrl": "./movieapp.png",
+      "liveLink": "https://movie-apps-eight.vercel.app/",
+      "githubLink": "https://github.com/Zakariaghoudi/movie-apps"
+    },
+
+    {
+      "id": 2,
+      "title": "Simple Clock",
+      "description": "This a simple simple e-clock web application. ",
+      "techStack": ["HTML","CSS", "JavaScript"],
+      "imageUrl": "./clock.jpeg",
+      "liveLink": "https://clock-pi-three.vercel.app/",
+      "githubLink": "https://github.com/Zakariaghoudi/Clock"
+    },
+
+    {
+      "id": 3,
+      "title": "Calculator",
+      "description": "This is a simple, aesthetically pleasing calculator web app.",
+      "techStack": ["HTML", "CSS3", "JavaScript"],
+      "imageUrl": "./calcul.png",
+      "liveLink": "https://calculator-nu-ivory-79.vercel.app",
+      "githubLink": "https://github.com/Zakariaghoudi/Calculator"
+    },
+
+    {
+      "id": 4,
+      "title": "ToDo List App",
+      "description": "This is a simple, aesthetically pleasing to do list web app.",
+      "techStack": ["React js ", "CSS3", "redux"],
+      "imageUrl": "./todolist.png",
+      "liveLink": "https://todolist-woad-seven.vercel.app/",
+      "githubLink": "https://github.com/Zakariaghoudi/redux"
+    },
+
+    {
+      "id": 5,
+      "title": "Weather App",
+      "description": "A weather web application building with react js,  ",
+      "techStack": ["React", "Node.js", "axios"],
+      "imageUrl": "./weather.png",
+      "liveLink": "https://weather-app-eight-ebon-77.vercel.app/",
+      "githubLink": "https://github.com/Zakariaghoudi/Weather-App"
+    },
+     {
+      "id": 6,
+      "title": "Chat Application",
+      "description": "An innovative Chat application integrating the power of AI   ",
+      "techStack": ["React", "Node.js", "axios"],
+      "imageUrl": "./chat-app.png",
+      "githubLink": "https://github.com/Zakariaghoudi/chat-application",
+      "liveLink": "https://chat-application-nine-nu.vercel.app/"
+
+     }
+]
+}

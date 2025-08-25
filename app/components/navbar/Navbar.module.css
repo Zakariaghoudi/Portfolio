@@ -1,0 +1,142 @@
+.navbar {
+  background: linear-gradient(to right, white, #6f93a5);
+  border-radius: 0 0 1.5rem 1.5rem;
+  width: 75%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 5;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444242;
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.5);
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.navLink {
+  color: #555;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+.navLink:hover {
+  color: #54a3fd;
+}
+
+.activeLink {
+  font-weight: bold;
+  color: #0070f3;
+  border-bottom: 3px solid #0070f3;
+}
+
+.navLinkCta {
+  background-color: #0070f3;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.navLinkCta:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+.activeCta {
+  box-shadow: 0 0 10px rgba(0, 112, 243, 0.7);
+}
+
+.hamburger {
+  display: none; /* Hidden on desktop */
+}
+
+/* --- Mobile View --- */
+@media screen and (max-width: 768px) {
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%; /* Hidden by default */
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navMenu.active {
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    width: 285px;
+    height: 350px;
+    left: 0; /* Shown when active */
+    opacity: 1;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+  }
+
+  .navLink {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navLinkCta {
+    margin: 1.5rem auto;
+  }
+
+  .hamburger {
+    display: flex; /* Shown on mobile */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .hamburger .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+}

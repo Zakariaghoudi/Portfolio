@@ -1,0 +1,90 @@
+.heading{
+  font-size: 2.5rem;
+  margin: 15px 0;
+  text-align: center;
+  color: #858080;
+}
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  list-style: none;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projectCard {
+  min-height: 280px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.95) 100%);
+  z-index: 1;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  color: whitesmoke;
+  padding: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(65%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  margin: 5px;
+  padding-bottom: 0.5rem;
+}
+
+.cardDescription, .cardTech, .cardLinks {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.projectCard:hover .cardContent {
+  transform: translateY(0);
+}
+
+.projectCard:hover .cardDescription,
+.projectCard:hover .cardTech,
+.projectCard:hover .cardLinks {
+  opacity: 1;
+}
+
+.cardLinks {
+  margin-top: 1rem;
+}
+
+.cardLinks a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(77, 219, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  border: 1px solid rgba(77, 219, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.cardLinks a:hover {
+  background-color: #4ddbff;
+  color: #1a1a1a;
+}

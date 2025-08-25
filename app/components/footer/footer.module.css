@@ -1,0 +1,127 @@
+.footer {
+  max-width: 100%;
+  background-color: #121212;
+  color: #a7a7a7;
+  padding: 4rem 2rem 1rem;
+  font-family: "Inter", sans-serif;
+  border-top: 1px solid #2a2a2a;
+  margin-top: 10px;
+}
+
+.footerContent {
+  border-right: 10px solid #0070f3;
+  border-left: 10px solid #0070f3;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 12rem;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo {
+  padding-left: 30px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  padding-left: 30px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.sectionTitle {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* Underline effect for section titles */
+.sectionTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 30px;
+  height: 2px;
+  background-color: #0070f3;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  margin-bottom: 0.8rem;
+}
+
+.links a {
+  color: #a7a7a7;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.links a:hover {
+  color: #0070f3;
+  padding-left: 5px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialIcons a {
+  color: #a7a7a7;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #0070f3;
+  transform: translateY(-3px);
+}
+
+.footerBottom {
+  border-top: 1px solid #2a2a2a;
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerBottom p {
+  margin: 0.3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+}

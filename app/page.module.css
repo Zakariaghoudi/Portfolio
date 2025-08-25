@@ -1,0 +1,151 @@
+/* --- Mobile First Styles --- */
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  min-height: 90vh; /* Use min-height for flexibility */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.page {
+  z-index: 1;
+  font-family: monospace;
+  font-size: 18px; /* Smaller base font size for mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content on mobile */
+  text-align: center;
+  width: 100%; /* Full width on small screens */
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.page span {
+  color: rgb(55, 155, 243);
+}
+
+.page h1 {
+  margin: 0;
+  font-size: 2.2rem; /* Responsive font size */
+}
+
+.page p {
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.buttons button {
+  font-size: 1rem; /* Adjusted font size for buttons */
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: rotate(7.5deg) scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 112, 243, 0.7);
+}
+
+.image {
+  opacity: 0.7;
+  width: 100%; /* Responsive width */
+  max-width: 350px; /* Control max size on mobile */
+  height: auto;
+  background: linear-gradient(135deg, #05509b, #1e9df1);
+  border-radius: 30% 70% 70% 30% / 30% 30% 60% 60%;
+  object-fit: cover;
+  mix-blend-mode: multiply, lighten;
+  margin-top: 2rem;
+}
+
+.statsContainer {
+  gap: 3rem; /* Reduced gap for mobile */
+  padding: 40px 20px;
+  margin-bottom: 25px;
+}
+
+.stat {
+  min-width: auto; /* Allow stat to be flexible */
+  padding-right: 0;
+}
+
+.number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #269ee4;
+}
+
+.stat p {
+  color: white;
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+/* --- Tablet & Desktop Styles --- */
+@media (min-width: 768px) {
+  .home {
+    flex-direction: row; /* Switch to side-by-side layout */
+    justify-content: space-between;
+    height: 90vh; /* Restore original height */
+    padding: 2rem;
+  }
+
+  .page {
+    width: 40%; /* Restore original width */
+    align-items: flex-start; /* Align text to the left */
+    text-align: left;
+    font-size: 25px; /* Restore original font size */
+  }
+
+  .page h1 {
+    font-size: 3rem;
+  }
+
+  .buttons {
+    justify-content: flex-start;
+  }
+
+  .buttons button {
+    font-size: 25px;
+    padding: 1rem 2rem;
+  }
+
+  .image {
+    width: 550px; /* Restore original width */
+    max-width: 450px;
+    margin-top: 0;
+  }
+
+  .statsContainer {
+    flex-direction: row; /* Display stats side-by-side */
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .stat {
+    min-width: 200px;
+    padding-right: 2rem;
+  }
+
+  .number {
+    font-size: 3rem;
+  }
+
+  .stat p {
+    font-size: 1.5rem;
+  }
+}
