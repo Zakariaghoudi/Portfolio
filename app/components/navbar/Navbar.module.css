@@ -1,7 +1,7 @@
 .navbar {
   background: linear-gradient(to right, white, #6f93a5);
   border-radius: 0 0 1.5rem 1.5rem;
-  width: 75%;
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -67,8 +67,8 @@
 .navLinkCta {
   background-color: #0070f3;
   color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 50px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
   margin-left: 1rem;

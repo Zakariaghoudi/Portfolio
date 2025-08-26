@@ -37,7 +37,11 @@ function page() {
   return (
     <>
       <div className={styles.contactContainer}>
+        <div className={styles.contactInfo}>
         <h1 className={styles.title}>Contact Us</h1>
+        <span>Phone Number : +216 94 081 226</span>
+        <span>Email : zakariaghoudi1@gmail.com</span>
+        </div>
         <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
           <div className={styles.formGroup}>
             <label htmlFor="name" className={styles.label}>

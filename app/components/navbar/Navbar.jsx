@@ -17,10 +17,9 @@ const Navbar = () => {
       <div className={styles.navContainer}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          Portfolio
+          Zakaria
         </Link>
 
-        {/* Hamburger Icon for Mobile */}
         <div className={styles.hamburger} onClick={toggleMenu}>
           <div className={styles.line}></div>
           <div className={styles.line}></div>
